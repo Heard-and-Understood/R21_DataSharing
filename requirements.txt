@@ -1,0 +1,38 @@
+# Multimodal BERT Baseline Requirements
+# NOTE: compatible with both Mac (MPS) and Linux (CUDA)
+
+# core deep learning frameworks
+torch>=2.0.0
+torchvision>=0.15.0
+
+# HuggingFace transformers for BERT
+transformers>=4.30.0
+
+# data processing
+numpy>=1.24.0
+pandas>=2.0.0
+pillow>=10.0.0
+
+# visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# machine learning utilities
+scikit-learn>=1.3.0
+
+# progress bars
+tqdm>=4.65.0
+
+# optional: for faster performance TODO: look into this
+# accelerate>=0.20.0  # HuggingFace's training acceleration library
+
+# NOTE:
+# - for Mac M1/M2: install PyTorch with MPS support
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+# 
+# - for Linux with CUDA: install PyTorch with CUDA support
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+#   (replace cu118 with your CUDA version)
+#
+# - for CPU-only: use the default PyTorch installation
+#   pip install torch torchvision
